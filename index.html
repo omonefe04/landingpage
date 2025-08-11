@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taste Naija - Nigerian Delights</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Taste Naija</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="menu-section" id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="images/download.jpg"alt="Jollof Rice" />
+        <h3>Jollof Rice</h3>
+        <p>Spicy, tasty, and unforgettable</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/efe 1.jpg" alt="ogbono Soup" />
+        <h3>Ogbono Soup</h3>
+        <p>Served with pounded yam or eba</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/images.jpg" alt="Yam and egg sauce" />
+        <h3> Yam and egg sauce</h3>
+        <p> Made with lots of love</p>
+       </div>
+
+      <div Class="menu-card">
+        <img src="images/efe.jpg" alt="Egusi soup"/>
+         <h3> Egusi soup</h3>
+         <p> Paired with any swallow of your choice </p>
+        
+      
+      </div>
+    </div>
+       <div class="catchphrase"> <h4>....And lots more </h4> </div>
+</div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Taste Naija</h2>
+    <p>We bring you the most authentic Nigerian cuisine prepared with love and passion by seasoned chefs. From the heart of Nigeria to your plate. We've got you covered!</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Taste Naija. All rights reserved.</p>
+  </footer>
+   <script>
+    function scrollToMenu() {
+      document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
