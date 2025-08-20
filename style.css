@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  
+  background-color:black;
   padding:4rem 2rem;
   color:black;
   display: flex;
